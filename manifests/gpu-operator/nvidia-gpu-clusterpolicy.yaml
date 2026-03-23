@@ -59,7 +59,7 @@ spec:
       configMapName: ''
     virtualTopology:
       config: ''
-    enabled: true
+    enabled: false
     useNvidiaDriverCRD: false
     useOpenKernelModules: true
   devicePlugin:
