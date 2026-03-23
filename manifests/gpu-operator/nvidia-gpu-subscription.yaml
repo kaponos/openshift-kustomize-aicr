@@ -2,7 +2,6 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
   name: gpu-operator-certified
-  namespace: nvidia-gpu-operator
 spec:
   channel: "v22.9"
   installPlanApproval: Manual
