@@ -59,7 +59,7 @@ spec:
       configMapName: ''
     virtualTopology:
       config: ''
-    enabled: false
+    enabled: true
     useNvidiaDriverCRD: false
     useOpenKernelModules: true
   devicePlugin:
@@ -104,6 +104,3 @@ spec:
   toolkit:
     installDir: /usr/local/nvidia
     enabled: true
-    env:
-      - name: DRIVER_ROOT
-        value: /
