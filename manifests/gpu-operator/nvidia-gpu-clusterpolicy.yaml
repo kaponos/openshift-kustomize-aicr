@@ -104,3 +104,6 @@ spec:
   toolkit:
     installDir: /usr/local/nvidia
     enabled: true
+    env:
+      - name: DRIVER_ROOT
+        value: /
