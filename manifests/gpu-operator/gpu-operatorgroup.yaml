@@ -4,4 +4,4 @@ metadata:
   name: nvidia-gpu-operator-group
 spec:
   targetNamespaces:
-  - nvidia-gpu-operator
+  - gpu-operator
