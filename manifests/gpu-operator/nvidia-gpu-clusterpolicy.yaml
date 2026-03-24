@@ -61,7 +61,7 @@ spec:
       config: ''
     enabled: true
     useNvidiaDriverCRD: false
-    useOpenKernelModules: true
+    kernelModuleType: auto
   devicePlugin:
     config:
       name: ''
@@ -86,6 +86,8 @@ spec:
   nodeStatusExporter:
     enabled: true
   daemonsets:
+    tolerations:
+      - operator: Exists
     rollingUpdate:
       maxUnavailable: '1'
     updateStrategy: RollingUpdate
@@ -93,10 +95,7 @@ spec:
     defaultWorkload: container
     enabled: false
   gds:
-    enabled: true
-    image: nvidia-fs
-    version: 2.20.5
-    repository: nvcr.io/nvidia/cloud-native
+    enabled: false
   vgpuManager:
     enabled: false
   vfioManager:
