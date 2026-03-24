@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   # Node Feature Discovery
-  - nfd.yaml
+  - nfd-subscription.yaml
   # NVIDIA GPU Operator
-  - nvidia-gpu-clusterpolicy.yaml
+  - gpu-operatorgroup.yaml
+  - nvidia-gpu-subscription.yaml

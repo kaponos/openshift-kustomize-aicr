@@ -1,0 +1,1 @@
+Kustomize files that are subscriptions for openshift deployment of GPU operator.
